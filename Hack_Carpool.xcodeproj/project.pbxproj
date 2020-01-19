@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5245C56023D4A0180014478D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C55F23D4A0180014478D /* AppDelegate.swift */; };
 		5245C56223D4A0180014478D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C56123D4A0180014478D /* SceneDelegate.swift */; };
-		5245C56423D4A0180014478D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C56323D4A0180014478D /* ViewController.swift */; };
 		5245C56723D4A0180014478D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5245C56523D4A0180014478D /* Main.storyboard */; };
 		5245C56923D4A01B0014478D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5245C56823D4A01B0014478D /* Assets.xcassets */; };
 		5245C56C23D4A01B0014478D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5245C56A23D4A01B0014478D /* LaunchScreen.storyboard */; };
+		5245C57523D4A26B0014478D /* RideFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C57423D4A26B0014478D /* RideFeedController.swift */; };
+		5245C57723D4A3930014478D /* RidePostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C57623D4A3930014478D /* RidePostInfo.swift */; };
+		5245C57923D4A85F0014478D /* RidePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C57823D4A85F0014478D /* RidePost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5245C55C23D4A0180014478D /* Hack_Carpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack_Carpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5245C55F23D4A0180014478D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5245C56123D4A0180014478D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5245C56323D4A0180014478D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5245C56623D4A0180014478D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5245C56823D4A01B0014478D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5245C56B23D4A01B0014478D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5245C56D23D4A01B0014478D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5245C57423D4A26B0014478D /* RideFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideFeedController.swift; sourceTree = "<group>"; };
+		5245C57623D4A3930014478D /* RidePostInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidePostInfo.swift; sourceTree = "<group>"; };
+		5245C57823D4A85F0014478D /* RidePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidePost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		5245C55E23D4A0180014478D /* Hack_Carpool */ = {
 			isa = PBXGroup;
 			children = (
-				5245C55F23D4A0180014478D /* AppDelegate.swift */,
-				5245C56123D4A0180014478D /* SceneDelegate.swift */,
-				5245C56323D4A0180014478D /* ViewController.swift */,
+				5245C57423D4A26B0014478D /* RideFeedController.swift */,
+				5245C57823D4A85F0014478D /* RidePost.swift */,
+				5245C57323D4A0280014478D /* SupportingFiles */,
 				5245C56523D4A0180014478D /* Main.storyboard */,
 				5245C56823D4A01B0014478D /* Assets.xcassets */,
-				5245C56A23D4A01B0014478D /* LaunchScreen.storyboard */,
 				5245C56D23D4A01B0014478D /* Info.plist */,
+				5245C57623D4A3930014478D /* RidePostInfo.swift */,
 			);
 			path = Hack_Carpool;
+			sourceTree = "<group>";
+		};
+		5245C57323D4A0280014478D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5245C56A23D4A01B0014478D /* LaunchScreen.storyboard */,
+				5245C55F23D4A0180014478D /* AppDelegate.swift */,
+				5245C56123D4A0180014478D /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5245C56423D4A0180014478D /* ViewController.swift in Sources */,
 				5245C56023D4A0180014478D /* AppDelegate.swift in Sources */,
+				5245C57723D4A3930014478D /* RidePostInfo.swift in Sources */,
+				5245C57523D4A26B0014478D /* RideFeedController.swift in Sources */,
+				5245C57923D4A85F0014478D /* RidePost.swift in Sources */,
 				5245C56223D4A0180014478D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
